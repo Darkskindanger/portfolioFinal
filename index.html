@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="output.css" />
+        <link rel="stylesheet" href="input.css" />
+        <script
+            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Portfolio</title>
+    </head>
+    <body class="">
+        <div
+            id="introductory-Content"
+            class="h-screen bg-[url(images/'raghav-verma-VISZBcAB6U8-unsplash.jpg')] bg-cover bg-right bg-no-repeat"
+        >
+            <nav
+                class="relative flex text-gray-300 min-[630px]:flex-row-reverse"
+            >
+                <ul
+                    id="nav-links2"
+                    class="nav-btns2 hid2 mx-auto mt-5 flex flex-row gap-10 text-clampS font-semibold text-white hover:cursor-pointer max-[630px]:hidden"
+                >
+                    <li
+                        class="relative before:absolute before:-top-2 before:right-0 before:text-sm before:text-white before:content-['01'] hover:underline active:underline"
+                    >
+                        <a href="#">// Home</a>
+                    </li>
+                    <li
+                        class="relative before:absolute before:-top-2 before:right-0 before:text-sm before:text-white before:content-['02'] hover:underline active:underline"
+                    >
+                        <a href="#art-2">// About</a>
+                    </li>
+                    <li
+                        class="relative before:absolute before:-top-2 before:right-0 before:text-sm before:text-white before:content-['03'] hover:underline active:underline"
+                    >
+                        <a href="#projects">// Projects</a>
+                    </li>
+                </ul>
+                <div
+                    id="sideBar"
+                    class="absolute left-0 top-0 h-screen w-0 bg-gray-300 duration-75"
+                >
+                    <button
+                        id="menuClose"
+                        onclick="closeNav"
+                        class="absolute left-5 top-7"
+                    >
+                        <img src="images/icon-close.svg" alt="Close Menu" />
+                    </button>
+                    <ul
+                        id="nav-links"
+                        class="nav-btns ml-10 mt-20 hidden flex-col gap-14 font-semibold text-black "
+                    >
+                        <li class="active:underline">
+                            <a href="#">Home</a></li>
+                        <li class="active:underline">
+                            <a href="#art-2">About</a>
+                        </li>
+                        <li class="active:underline">
+                            <a href="#projects">Projects</a>
+                        </li>
+                    </ul>
+                    <p
+                        id="nav-footer"
+                        class="ml-5 mt-9 hidden font-semibold text-black"
+                    >
+                        &copy;2024 Created by Kilian Tavares
+                    </p>
+                </div>
+                <div class="ml-3 mt-5 flex items-center gap-1">
+                    <button id="menuBtn" onclick="openNav">
+                        <img
+                            src="images/menu-regular-48 (1).png"
+                            alt="menu-btn"
+                            class="w-8 min-[630px]:hidden"
+                        />
+                    </button>
+                    <dotlottie-player
+                        src="https://lottie.host/45e41271-8a21-40dd-bc93-b3968473ab5c/ujLGwWFSuq.json"
+                        id="kLogo"
+                        background="transparent"
+                        speed="1"
+                        style="width: 50px; height: 50px"
+                        direction="1"
+                        playMode="normal"
+                        loop
+                        autoplay
+                    ></dotlottie-player>
+                </div>
+            </nav>
+            <article
+                id="art-1"
+                class="relative flex h-[740px] flex-col justify-center gap-10"
+            >
+                <h2
+                    class="text-center text-clamp3XL font-semibold text-gray-300"
+                >
+                    Kilian Tavares
+                </h2>
+                <p
+                    class="mx-auto w-10/12 text-center text-clamp font-semibold text-gray-300"
+                >
+                    Junior Fullstack Web Developer
+                </p>
+
+                <a href="" id="art1-btn" class="self-center"
+                    ><dotlottie-player
+                        src="https://lottie.host/dfeefc83-7e1c-40bf-8fbc-f7a6868ff6d9/w7dfxY5iqO.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 70px; height: 70px"
+                        direction="1"
+                        playMode="normal"
+                        loop
+                        autoplay
+                    ></dotlottie-player>
+                    ></a>
+            </article>
+        </div>
+
+        <article
+            id="art-2"
+            class="flex flex-col items-center gap-5 bg-zinc-950 pt-5 shadow-[0px_-95px_20px_100px_#00000024]"
+        >
+            <h2 class="mb-5 text-center text-5xl font-semibold text-white">
+                My Expertise
+            </h2>
+            <section class="hid flex flex-wrap justify-center">
+                <div class="showDelay w-72 border-2 border-white p-7">
+                    <div class="inline-flex w-full items-center justify-around">
+                        <img
+                            src="images/desktop-svgrepo-com.svg"
+                            alt=""
+                            class="mr-2"
+                        />
+                        <h5 class="text-3xl font-semibold text-white">
+                            Front End
+                        </h5>
+                    </div>
+                    <div
+                        class="text-lg font-semibold before:text-white before:content-['<p>']"
+                    ></div>
+                    <div class="flex h-[101px] p-2">
+                        <div class="mr-2 w-0.5 bg-white"></div>
+                        <p
+                            class="font-semibold text-white [&>span]:text-green-400"
+                        >
+                            Deep love for deploying web apps and websites.
+                            <span>HTML, CSS/Tailwind, REACTJS</span>
+                         use.
+                        </p>
+                    </div>
+                    <div
+                        class="mb-1 text-lg font-semibold after:text-white after:content-['<p>']"
+                    ></div>
+                </div>
+                <div class="showDelay w-72 border-2 border-white p-7">
+                    <div class="inline-flex w-full items-center justify-around">
+                        <img
+                            src="images/server-minimalistic-svgrepo-com.svg"
+                            alt=""
+                            class="mr-2"
+                        />
+                        <h5 class="text-3xl font-semibold text-white">
+                            Back end
+                        </h5>
+                    </div>
+                    <div
+                        class="text-lg font-semibold before:text-white before:content-['<p>']"
+                    ></div>
+                    <div class="flex h-[100px] p-2">
+                        <div class="mr-2 w-0.5 bg-white"></div>
+                        <p
+                            class="font-semibold text-white [&>span]:text-green-400"
+                        >
+                            <span>NextJS</span> and <span>PHP</span> experience,
+                            <span>Backend API</span> and Database
+                            <span>construction.</span>
+                            <span>Azure</span>
+                            implementation.
+                        </p>
+                    </div>
+                    <div
+                        class="mb-1 text-lg font-semibold after:text-white after:content-['<p>']"
+                    ></div>
+                </div>
+                <div class="showDelay w-72 border-2 border-white p-7">
+                    <div class="inline-flex w-full items-center justify-around">
+                        <img
+                            src="images/teamwork-work-svgrepo-com.svg"
+                            alt=""
+                            class="mr-2"
+                        />
+                        <h5 class="w-min text-3xl font-semibold text-white">
+                            Customer Service
+                        </h5>
+                    </div>
+                    <div
+                        class="text-lg font-semibold before:text-white before:content-['<p>']"
+                    ></div>
+                    <div class="flex h-[101px]">
+                        <div class="mr-2 w-0.5 bg-white"></div>
+                        <p class="font-semibold text-white">
+                            Extensive experience in customer service roles, I
+                            offer concise and direct business communication.
+                        </p>
+                    </div>
+                    <div
+                        class="mb-1 text-lg font-semibold after:text-white after:content-['<p>']"
+                    ></div>
+                </div>
+            </section>
+        </article>
+        <article
+            id="projects"
+            class="flex flex-col gap-4 bg-zinc-950 px-5 pt-14 text-white"
+        >
+            <section
+                class="flex flex-col mb-3 gap-3 min-[670px]:mx-auto min-[670px]:max-w-[502px]"
+            >
+                <h2 class="w-min text-6xl text-clampXXL font-bold">My Work</h2>
+                <p class="text-clampS font-bold">
+                    Specialising in the fundamentals of web development, Fell in
+                    love with building/maintaining various projects from
+                    freelancing to personal projects.
+                </p>
+            </section>
+
+            <ul
+                id="projects"
+                class="hid2 mx-auto flex w-11/12 items-center justify-center gap-5 [&>li]:max-w-[600px] [&>li]:p-1 [&_span]:font-semibold  flex-wrap"
+            >
+                <li class="showDelay2 rounded-lg bg-zinc-900 ">
+                   <a href="https://uno-noip.vercel.app/">
+                    <picture><source srcset="project-collages\unoSC.webp" media="(min-width: 600px)"> <img src="project-collages\unoSCMobile.webp" alt="Oasis Carpentry" height=“400” width=“600” loading=“lazy” decoding=“async”> </picture>
+                        <h3 class="text-xl font-bold text-white">Uno</h3>
+                        <span>Lightweight payroll software demo.</span>
+                    </a>
+                   
+                </li>
+                <li class="showDelay2 rounded-lg bg-zinc-900 ">
+                    <a href="https://darkskindanger.github.io/Foodary/">
+                     <picture><source srcset="project-collages\foodary.webp" media="(min-width: 600px)"> <img src="project-collages\foodary-mobile.webp" alt="Oasis Carpentry" height=“400” width=“600” loading=“lazy” decoding=“async”> </picture>
+                         <h3 class="text-xl font-bold text-white">Uno</h3>
+                         <span>Lightweight payroll software demo.</span>
+                     </a>
+                    
+                 </li>
+                 <li class="showDelay2 rounded-lg bg-zinc-900 ">
+                    <a href="https://coruscating-paprenjak-089fa1.netlify.app/">
+                     <picture><source srcset="project-collages\weatherPage.webp" media="(min-width: 600px)"> <img src="project-collages\weatherPageMobile.webp" alt="Oasis Carpentry" height=“400” width=“600” loading=“lazy” decoding=“async”> </picture>
+                         <h3 class="text-xl font-bold text-white">Uno</h3>
+                         <span>Lightweight payroll software demo.</span>
+                     </a>
+                    
+                 </li>
+            </ul>
+        </article>
+        <article
+            id="professional-experience"
+            class="bg-zinc-950 px-5 pb-14 pt-10 text-white"
+        >
+            <h2 class="text-wrap text-center text-3xl font-bold">
+                Professional Experience
+            </h2>
+            <div
+                id="expList"
+                class="mx-auto mt-5 flex max-w-[730px] flex-col items-center gap-1 [&_*]:hover:cursor-pointer"
+            >
+                <div
+                    class="expBtn inline-flex w-11/12 items-center justify-between gap-3 rounded bg-purple-600 p-2 text-center"
+                >
+                    <span class="text text-2xl"
+                        >Junior Web Dev / Freelancing</span
+                    >
+                    <div class="] self-center">
+                        <i
+                            class="fa-thin fa-plus fa-lg self-center p-2"
+                            style="color: #ffffff"
+                        ></i>
+                    </div>
+                </div>
+                <div
+                    onclick="dropExp"
+                    class="adf w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
+                >
+                    <dotlottie-player
+                        src="https://lottie.host/45e41271-8a21-40dd-bc93-b3968473ab5c/ujLGwWFSuq.json"
+                        id="kLogo"
+                        background="transparent"
+                        speed="1"
+                        style="width: 50px; height: 50px"
+                        direction="1"
+                        playMode="normal"
+                        loop
+                        autoplay
+                        class="mb-5"
+                    ></dotlottie-player>
+
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-map-location-dot"></i> Sydney,
+                        Australia
+                    </p>
+
+                    <p class="mt-2 text-lg">
+                        Freelance services for selected clients. From scratch to
+                        regular patch/maintenance, At the same time working on
+                        personal projects to improve expertise in fullstack
+                        capability.
+                    </p>
+                    <ul
+                        class="jobLang mt-4 inline-flex flex-wrap gap-4 font-semibold [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
+                    >
+                        <li>HTML</li>
+                        <li>CSS/Tailwind</li>
+                        <li>JS/TS</li>
+                        <li>PHP/MySQL</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="expBtn inline-flex w-11/12 items-center justify-between gap-3 rounded bg-purple-600 p-2 text-center"
+                >
+                    <span class="text text text-2xl"
+                        >Customer Service Agent @ DHL</span
+                    >
+                    <div class="w-7 rounded-full">
+                        <i
+                            class="fa-thin fa-plus fa-lg self-center"
+                            style="color: #ffffff"
+                        ></i>
+                    </div>
+                </div>
+                <div
+                    onclick="dropExp2"
+                    class="dhl w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
+                >
+                    <img src="images/dhl-3.svg" alt="" class="mb-5 max-w-20" />
+
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-map-location-dot"></i> Sydney,
+                        Australia
+                    </p>
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-inbox"></i>
+                        Kilian.Tavares@Firebase.com.au
+                    </p>
+
+                    <p class="mt-2 text-lg">
+                        First point of contact for DHL customers. Both B2C and B2B. Account management and business relations duties taken up aswell.
+                    </p>
+                    <ul
+                        class="jobLang mt-5 inline-flex flex-wrap gap-[5px] text-sm font-semibold [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
+                    >
+                        <li>Concise and detailed assistance for DHL customers</li>
+                        <li>Liasing with Businesses for salesorders</li>
+                        <li>Working alongside NSW Govt agencies</li>
+                        <li>Detailed and robust first call resolution</li>
+                    </ul>
+                </div>
+                <div
+                    class="expBtn inline-flex w-11/12 items-center justify-between gap-3 rounded bg-purple-600 p-2 text-center"
+                >
+                    <span class="text text-2xl"
+                        >Junior Fullstack Developer @ Investor Haven</span
+                    >
+                    <div class="w-7 rounded-full">
+                        <i
+                            class="fa-thin fa-plus fa-lg self-center"
+                            style="color: #ffffff"
+                        ></i>
+                    </div>
+                </div>
+                <div
+                    onclick="dropExp3"
+                    class="investor-haven [&_p]: h-[0px] w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
+                >
+                    <img
+                        src="images/investorHavenLogo.png"
+                        alt=""
+                        class="mb-5 max-w-28"
+                    />
+
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-map-location-dot"></i> Sydney,
+                        Australia
+                    </p>
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-inbox"></i>
+                        Kilian.Tavares@Firebase.com.au
+                    </p>
+
+                    <p class="mt-2 text-lg">
+                        Developing front and backend interfaces and databases, Meeting business needs and fulfilling customers expectations.
+                    </p>
+                    <ul
+                        class="jobLang mt-4 inline-flex flex-wrap gap-4 font-semibold [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
+                    >
+                        <li>HTML/CSS/Tailwind</li>
+                        <li>Javascript</li>
+                        <li>PHP & MySQL</li>
+                        <li>ReactJS/Typescript</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article
+            id="art3"
+            class="flex flex-col min-[550px]:p-5 min-[750px]:flex-row min-[1030px]:hidden"
+        >
+            <div
+                class="flex flex-col gap-5 bg-purple-500 px-7 py-5 [&>*]:font-semibold [&>*]:text-white"
+            >
+                <div class="flex flex-row-reverse justify-between">
+                    
+                        <path
+                            d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="self-center font-semibold">
+                    Since 2023 Kilian has been responsible for the development
+                    of our website which has been instrumental to the growth of
+                    our company. Even while working remotely he’s been highly
+                    responsive, organized and strategic in his thinking. In
+                    addition to staying on top of day-to-day site changes and
+                    builds, he’s provided us with great advice to stay on top of
+                    the current changes in web technologies. He’s also
+                    implemented effective project management and Q&A processes.
+                    As a result Kilian has been an highly valued and impactful
+                    member of our team.
+                </p>
+
+                <p>
+                    - Adel Nour @ Investor Haven
+                    <br />
+                    CEO at Investor Haven
+                </p>
+            </div>
+            <div
+                class="flex flex-col gap-5 bg-blue-500 px-7 py-5 [&>*]:font-semibold [&>*]:text-white"
+            >
+                <div class="flex flex-row justify-between">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="84"
+                        height="84"
+                        viewBox="0 0 24 24"
+                        style="
+                            fill: rgba(199, 189, 189, 0.47);
+                            transform:;
+                            msfilter:;
+                        "
+                    >
+                        <path
+                            d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="self-center font-semibold">
+                    Kilian is AMAZING! If you have any doubt about hiring him,
+                    ask me – I am really impressed by this guy!
+                </p>
+
+                <p>
+                    - Rochelle Carter
+                    <br />
+                    Manager @ DHL
+                </p>
+            </div>
+            <div
+                class="flex flex-col gap-5 bg-purple-700 px-7 py-5 [&>*]:font-semibold [&>*]:text-white"
+            >
+                <div class="flex flex-row-reverse justify-between">
+                  <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="84"
+                        height="84"
+                        viewBox="0 0 24 24"
+                        style="
+                            fill: rgba(199, 189, 189, 0.47);
+                            transform:;
+                            msfilter:;
+                        "
+                    >
+                        <path
+                            d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="self-center font-semibold">
+                    Kilian is one of the best professionals that we have known
+                    in web development skills. Between his skills you can find
+                    good communication and accuracy with the planning in complex
+                    projects.
+                </p>
+
+                <p>
+                    - Cooper Staines
+                    <br />
+                    Floor Manager @ Investor Haven
+                </p>
+            </div>
+        </article>
+        <footer
+            class="flex flex-col gap-5 bg-gray-900 p-5 text-center min-[1030px]:flex-row"
+        >
+            <div
+                class="flex flex-col items-center justify-evenly text-center min-[1030px]:w-1/2"
+            >
+                <p class="p-3 text-3xl text-white">
+                    Available to take on additional freelance clients and job
+                    opportunities
+                </p>
+                <div>
+                    <p class="p-3 text-xl text-white">
+                        Have an exciting project you need help with? Send me an
+                        email:
+                    </p>
+                    <a href="#" class="text-xl text-white"
+                        >Kiliantavareswork@gmail.com</a
+                    >
+                </div>
+                <!-- <ul class="p-3 text-xl text-white">
+                    <li><a href="#">LinkeddIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul> -->
+            </div>
+            <article
+                id="art4"
+                class="hid3 grid w-1/2 grid-cols-2 grid-rows-2 p-5 max-[1030px]:hidden"
+            >
+                <div
+                    class="row-span-2 flex flex-col gap-5 bg-purple-500 px-7 py-5 text-clampXS [&>*]:font-semibold [&>*]:text-white"
+                >
+                    <div class="flex flex-row-reverse justify-between">
+                     <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="84"
+                            height="84"
+                            viewBox="0 0 24 24"
+                            style="
+                                fill: rgba(199, 189, 189, 0.47);
+                                transform:;
+                                msfilter:;
+                            "
+                        >
+                            <path
+                                d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <p class="self-center font-semibold">
+                        Since 2023 Kilian has been responsible for the
+                        development of our website which has been instrumental
+                        to the growth of our company. Even while working
+                        remotely he’s been highly responsive, organized and
+                        strategic in his thinking. In addition to staying on top
+                        of day-to-day site changes and builds, he’s provided us
+                        with great advice to stay on top of the current changes
+                        in web technologies. He’s also implemented effective
+                        project management and Q&A processes. As a result Kilian
+                        has been an highly valued and impactful member of our
+                        team.
+                    </p>
+
+                    <p>
+                        - Adel Nour
+                        <br />
+                        CEO @ Investor Haven
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col gap-5 bg-blue-500 px-7 py-5 text-clampXS [&>*]:font-semibold [&>*]:text-white"
+                >
+                    <div class="flex flex-row justify-between">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="84"
+                            height="84"
+                            viewBox="0 0 24 24"
+                            style="
+                                fill: rgba(199, 189, 189, 0.47);
+                                transform:;
+                                msfilter:;
+                            "
+                        >
+                            <path
+                                d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <p class="self-center font-semibold">
+                        Kilian is AMAZING! If you have any doubt about hiring
+                        him, ask me – I am really impressed by this guy!
+                    </p>
+
+                    <p>
+                        - Rochelle Carter
+                        <br />
+                        Manager @ DHL
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col gap-5 bg-purple-700 px-7 py-5 text-clampXS [&>*]:font-semibold [&>*]:text-white"
+                >
+                    <div class="flex flex-row-reverse justify-between">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="84"
+                            height="84"
+                            viewBox="0 0 24 24"
+                            style="
+                                fill: rgba(199, 189, 189, 0.47);
+                                transform:;
+                                msfilter:;
+                            "
+                        >
+                            <path
+                                d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <p class="self-center font-semibold">
+                        Kilian is one of the best professionals that we have
+                        known in web development skills. Between his skills you
+                        can find good communication and accuracy with the
+                        planning in complex projects.
+                    </p>
+
+                    <p>
+                        - Cooper Staines
+                        <br />
+                        Floor Manager @ Investor Haven
+                    </p>
+                </div>
+            </article>
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
